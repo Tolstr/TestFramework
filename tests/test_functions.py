@@ -28,6 +28,11 @@ def test_eight():
 def test_nine():
     assert 3==1
 
+@pytest.mark.skip(reason='not working now')
+def test_ten():
+    assert 10==0
 
-
+@pytest.mark.xfail(reason='test failing')
+def test_eleven():
+    assert 10==0
 

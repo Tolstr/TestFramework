@@ -27,3 +27,18 @@
 * python -m  pytest -v test_functions.py::test_one test_functions.py::test_eight (Run specific test like test one and test eight in this case)
 * pytest --collect-only (Shows how many tests we have)
 * pytest -v -k "test_five" (Runs test by name)
+## Structure
+*see screenshot "structure_pytest.jpg"
+* Create directory "tests" and put there our test_functions 
+** Create in tests directory file "pytest.ini" - COME BACK LATER (avoid write -v that can be here)
+## Test Marking 
+* SKIP TEST: @pytest.mark.skip(reason='not working now')   Add before test case 
+* FAil TEST: @pytest.mark.xfail(reason='test failing')      Add  before test case
+## Creating test classes:
+* Create py file class
+* Proper name is: class TestAnyName(): and after going functions
+* pytest -v tests/test_functions_class.py::TestClass  - run class 
+
+## Parametrizied Tests
+
+
