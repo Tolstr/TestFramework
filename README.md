@@ -12,4 +12,18 @@
 * In file .gitignore add "env/" 
 * OPen virtual environment: cd env, cd scripts, activate (verify that env activated), cd.., cd..
 * Pip install pytest (verify if pytest working with command pytest)
-* 
+* File-> Settings-> Project Interpreter and Add env scripts(C:\Python_Projects\TestFramwork\env\Scripts\python.exe)
+## First test
+* add python file that starts from "test_functions.py". ALways test_ first.
+* Inside include pytest library (import pytest and create two tests functions with pass inside
+* python -m  pytest test_functions.py (We call test_functions )
+* python -m  pytest  (all tests will be executed )
+* python -m  pytest test_functions.py::test_one (only test_one  from test_functions  will be executed )
+* python -m  pytest -v test_functions.py::test_one (-v argument will show more details about test execution )
+## Let's fail some test
+* create additional test with "assert False" that is same like "assert 0". This will fail tests that we want to fail.
+* For assertation user command "assert 2==2" (will pass). "assert 2==1" (will fail)
+# Additional commands for pytest to see more data or run specific tests
+* python -m  pytest -v test_functions.py::test_one test_functions.py::test_eight (Run specific test like test one and test eight in this case)
+* pytest --collect-only (Shows how many tests we have)
+* pytest -v -k "test_five" (Runs test by name)
