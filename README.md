@@ -45,3 +45,10 @@
 ##FICTURES
 *Simple fixture is: @pytest.fixture()    Using for login (reduces attempt login every time), DB, Webdiver etc. See example in file test_fixture.py
 
+
+## Sleium Integration (see file test_functions_with selenium)
+* pip install selenium - Add Selenium Client to Python
+* download chromedriver  same version like on browser.
+* Add path: driver=webdriver.Chrome('C:\Tools\chromedriver.exe')
+* 
+
