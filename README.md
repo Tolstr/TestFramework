@@ -42,9 +42,9 @@
 ## Parametrizied Tests
 * "@pytest.mark.parametrize('param', [('UsernameTolia','PasswordTolia'),('Usernamevlad','Passwordvlad')])" - We run two same tests with different credentials which is our parameters. We call inside the test them by typing param instead of username.
 
-##FICTURES
+##FIXTURES
 *Simple fixture is: @pytest.fixture()    Using for login (reduces attempt login every time), DB, Webdiver etc. See example in file test_fixture.py
-
+* @pytest.fixture(scope='session', autouse=True) - Use autouse to run all tests
 
 ## Sleium Integration (see file test_functions_with selenium)
 * pip install selenium - Add Selenium Client to Python
